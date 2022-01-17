@@ -20,7 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/tst',function (){
-    dd(\App\Http\Controllers\Services\PedigreeController::getNthGrandFathersList(5,185));
+    return view('familly-tree');
 });
-
-
